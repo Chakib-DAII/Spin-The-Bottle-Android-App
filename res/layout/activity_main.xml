@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround1"
+    tools:context="chakib.spinthebottle.MainActivity"
+    android:layout_gravity="center">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="visible"
+        android:id="@+id/sv_main_menu"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selection"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"    />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eau_menu1"
+                android:id="@+id/iv_water_menu"
+                android:onClick="selectMenu"
+                android:layout_marginBottom="10dp"  />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/soda_menu1"
+                android:id="@+id/iv_soda_menu"
+                android:onClick="selectMenu"
+                android:layout_marginBottom="10dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/beer_menu1"
+                android:id="@+id/iv_beer_menu"
+                android:onClick="selectMenu"
+                android:layout_marginBottom="10dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/liqueur_menu1"
+                android:id="@+id/iv_liqueur_menu"
+                android:onClick="selectMenu"
+                android:layout_marginBottom="10dp" />
+            <ImageView
+                android:id="@+id/iv_gomordi_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gomordi_menu1"
+                android:onClick="setFlacon"
+                android:layout_marginBottom="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="invisible"
+        android:id="@+id/sv_water_menu"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/water1"
+                        android:id="@+id/im_water1"
+                        android:onClick="setFlacon"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/water2"
+                        android:id="@+id/im_water2"
+                        android:onClick="setFlacon"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/water3"
+                        android:id="@+id/im_water3"
+                        android:onClick="setFlacon"
+                        />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/water4"
+                    android:id="@+id/im_water4"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/water5"
+                    android:id="@+id/im_water5"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="invisible"
+        android:id="@+id/sv_soda_menu"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/soda1"
+                    android:id="@+id/im_soda1"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/soda2"
+                    android:id="@+id/im_soda2"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/soda3"
+                    android:id="@+id/im_soda3"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="invisible"
+        android:id="@+id/sv_beer_menu"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer1"
+                    android:id="@+id/im_beer1"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer2"
+                    android:id="@+id/im_beer2"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer3"
+                    android:id="@+id/im_beer3"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer4"
+                    android:id="@+id/im_beer4"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer5"
+                    android:id="@+id/im_beer5"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer6"
+                    android:id="@+id/im_beer6"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer7"
+                    android:id="@+id/im_beer7"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer8"
+                    android:id="@+id/im_beer8"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/beer9"
+                    android:id="@+id/im_beer9"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="invisible"
+        android:id="@+id/sv_alcohol_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol1"
+                    android:id="@+id/im_alcohol1"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol2"
+                    android:id="@+id/im_alcohol2"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol3"
+                    android:id="@+id/im_alcohol3"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol4"
+                    android:id="@+id/im_alcohol4"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol5"
+                    android:id="@+id/im_alcohol5"
+                    android:onClick="setFlacon"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol6"
+                    android:id="@+id/im_alcohol6"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol7"
+                    android:id="@+id/im_alcohol7"
+                    android:onClick="setFlacon"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol8"
+                    android:id="@+id/im_alcohol8"
+                    android:onClick="setFlacon"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/alcohol9"
+                    android:id="@+id/im_alcohol9"
+                    android:onClick="setFlacon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--ImageButton
+        android:id="@+id/iv_bottle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/ic_launcher_round" /-->
+    <RelativeLayout
+        android:id="@+id/fl_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_bottle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="StartnReset"
+            android:scaleType="centerInside" />
+
+
+        <LinearLayout
+            android:id="@+id/iv_bubble"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/cb_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:textSize="15sp"
+                android:checked="true"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="0.07" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="      ou"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cb_verite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="verité"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="0.06" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/okbutton"
+                android:layout_marginBottom="5dp"
+                android:onClick="actVerite"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:id="@+id/iv_act_verite"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:id="@+id/imv_act_verite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/zone_de_texte"
+             />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/zone_de_texte"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_act_verite"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            >
+                <TextView
+                android:id="@+id/tv_text_act_verite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="actionVerite"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:paddingLeft="45dp"
+                android:paddingRight="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--Button
+        android:id="@+id/button_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="GO" /-->
+
+</RelativeLayout>

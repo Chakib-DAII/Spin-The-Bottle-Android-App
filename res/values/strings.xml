@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SpinTheBottle</string>
+    <string name="changer_flacon">Changer Flacon</string>
+
+    <!--Actions/-->
+    <string name="action1">Do an impression of your favorite celebrity</string>
+    <string name="action2">Give a 3 minute stand-up comedy routine</string>
+    <string name="action3">Break dance</string>
+    <string name="action4">Make up a story about the item to your right</string>
+    <string name="action5">Do your best president impression</string>
+    <string name="action6">Yell out the first word that comes to your mind right now</string>
+    <string name="action7">Sing everything you say for the next 10 minutes</string>
+    <string name="action8">Go up to someone random and ask for a hug</string>
+    <string name="action9">Make a poem using the words orange and moose</string>
+    <string name="action10">Get on all fours and act like a dog until your next turn</string>
+    <string name="action11">Make up a short rap about another player</string>
+    <string name="action12">Act like Romeo from “Romeo and Juliet” (pick who you want to be Juliet)</string>
+    <string name="action13">Do an impression of someone until another player can guess who you are</string>
+    <string name="action14">Only use sign language for the next round</string>
+    <string name="action15">Do pushups until it’s your turn again</string>
+    <string name="action16">Write a Facebook (or other social media) post only using your toes</string>
+    <string name="action17">Take a selfie with the toilet and post it online</string>
+    <string name="action18">Cross your eyes</string>
+    <string name="action19">Meow like cat</string>
+    <string name="action20">Put your leg behind you head</string>
+    <!--Verités/-->
+    <string name="verite1">What is your biggest fear in a relationship?</string>
+    <string name="verite2">What was your funniest first date ever?</string>
+    <string name="verite3">What is your weirdest habit?</string>
+    <string name="verite4">How many kids would you like to have?</string>
+    <string name="verite5">What is the perfect first day?</string>
+    <string name="verite6">What is one embarrassing fact I should know about you?</string>
+    <string name="verite7">What was your childhood nickname?</string>
+    <string name="verite8">What is your favourite movie?</string>
+    <string name="verite9">Describe your worst date ever?</string>
+    <string name="verite10">If there was no such thing as money, what would you do with your life?</string>
+    <string name="verite11">What is your favourite food?</string>
+    <string name="verite12">What are your three favourite colours, and why?</string>
+    <string name="verite13">Who is your favourite person and why?</string>
+    <string name="verite14">How do you put your toilet paper on the roll?</string>
+    <string name="verite15">Do you believe in love at first sight?</string>
+    <string name="verite16">Do you believe in love at all?</string>
+    <string name="verite17">Would you ever consider being a nudist?</string>
+    <string name="verite18">What is your guilty pleasure?</string>
+    <string name="verite19">What is your favourite season of the year?</string>
+    <string name="verite20">Describe your worst kiss ever?</string>
+
+
+</resources>
